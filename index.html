@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin´s Website</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  </head>
+  <body>
+    <h1>Hi there I'm Marvin,
+        <img src="images/Marvin-Martian-icon.png" width="80" height="80"> </h1>
+
+    <div class="intro">
+        <p>I am currently enrolled as undergraduate student at LMU Munich studying computer science.
+        I am mostly interested in (no particular order) :</p>
+        <ul>
+            <li>Machine Learning</li>
+            <li>second one</li>
+            <li>Cryptography</li>
+        </ul> 
+        In my freetime I also enjoy biking, cooking, wakeboarding and chess.
+    
+        In case you would like to get in touch feel free to contact me <a href="mailto:marvin1heinrich@gmail.com">here</a>.
+    </div>
+
+    <div class="headingp">
+        You can see my latest project here:
+    </div>
+
+    <div class="headingp2">
+      <b>Training intelligent Agents with Unity ML-Agents Toolkit</b>
+    </div>
+
+
+
+    <div class="unityp">
+      The Unity Machine Learning Agents Toolkit lets you train intelligent Agents inside Unity enviroments. The 
+      Agents learn automatically through reinforcement learning, imitation learning, neuroevolution, or other methods.
+      You can check the <a href="https://github.com/Unity-Technologies/ml-agents#readme">Readme file</a> for more information. 
+    </div>
+
+    <div class="headingp3">
+      Installation
+    </div>
+
+    <div class="unityp">
+      Installation was mostly straightforward. I basically just followed the <a href="https://github.com/Unity-Technologies/ml-agents#readme">Installation guide</a>.
+      I would highly recommend to also install the optional <i>com.unity.ml-agents.extensions</i> package and also to make sure that
+      you have the <i>com.unity.inputsystem</i> package installed. 
+    </div>
+
+
+    <div class="headingp3">
+      Training the first Agent
+    </div>
+
+    <div class="unityp">
+      Once everything was up and running I could go ahead with training the first agent. To start I chose the 
+      basic 3D Ball Model where the agent is getting trained to balance a ball on his head. You can simply start the 
+      training by running <i>mlagents-learn config/ppo/3DBall.yaml --run-id=first3DBallRun</i> and pressing the start button in unity.
+      You can also train any other of the provided 
+      models by replacing the 3DBall.yaml file in the comand. You can see the .yaml files at <i>\ml-agents-release_19\config\ppo</i>.
+    </div>
+
+    <div class="image-p">
+      <img id="ml-cover" src="images/3D-Ball Training.png" width="900" height="450">
+    </div>
+
+    <div class="unityp">
+      I let the model train for around 7 minutes. You can actually see your model training which is pretty cool. 
+      The trained model will be saved as an .onnx file which you can then embed into 
+      your agent. So this is how the agent performs after 7 Minutes of training: 
+
+    </div>
+
+    <div class="video-s">
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sr0HjwTCGog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+
+    <div class="headingp3">
+      Willy the Worm
+    </div>
+
+    <div class="unityp">
+     One of my favorite enviremonts was the Worm. You can train him to crawl to the the green box. I trained him for around 14 Minutes and he made some
+     great progress. Here is the full training video: 
+    </div>
+
+    <div class="video-s">
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kD0VKX3WRW0?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="unityp">
+      Another cool feature is that you check summary statistics of the Training in TensorBoard with the command: <i>tensorboard --logdir results</i>.
+      Here you can see the statistics of Willy training for 14 Minutes. 
+     </div>
+
+     <div class="image-p">
+      <img id="ml-cover" src="images/WillyTensorboard.png" width="900" height="450">
+    </div>
+
+    <div class="unityp">
+      And here is how Willy is performing after 14 Minutes of Training. Pretty good I would say. There are also other interesting enviroments to try out.
+     </div>
+
+     <div class="video-s">
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IGdgwVBAHNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+
+  </body>
+</html>

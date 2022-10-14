@@ -1,0 +1,44 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+  background-color:#181818;
+  font-size: larger;
+  }
+
+body {
+  padding-top: 30px;
+  padding-right: 90px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+
+.headingp {
+
+  padding-top: 50px ;
+  font-size: larger;
+
+}
+
+
+.headingp2 {
+
+  padding-top: 100px ;
+  font-size: xx-large;
+
+}
+
+.headingp3 {
+  padding-top: 30px ;
+  font-size: x-large;
+}
+
+
+.unityp {
+
+  padding: 0 20px 20px 20px;
+  padding-top: 30px;
+  font-size: large;
+
+
+}
